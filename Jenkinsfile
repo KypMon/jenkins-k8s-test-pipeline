@@ -1,5 +1,3 @@
-properties([
-
 def pod_label = "nodejs-${UUID.randomUUID().toString()}"
 
 pipeline {
@@ -24,13 +22,13 @@ spec:
     }
   }
 
+
   // Main part - stages
   stages {
     stage('Install Dependencies') {
-	    steps {
-            sh 'npm install'
+			steps {
+        sh 'npm install'
 			}
 		}
   }
-}
 

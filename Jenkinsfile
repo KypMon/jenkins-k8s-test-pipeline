@@ -3,7 +3,7 @@
 pipeline {
   agent {
     kubernetes {
-      label 'master'
+      label 'itm-test'
       defaultContainer 'node'
       yaml """
 apiVersion: v1

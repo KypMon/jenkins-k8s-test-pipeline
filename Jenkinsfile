@@ -3,7 +3,7 @@
 pipeline {
   agent {
     kubernetes {
-      label 'jenkins'
+    //   label 'jenkins'
       defaultContainer 'node'
       yaml """
 apiVersion: v1

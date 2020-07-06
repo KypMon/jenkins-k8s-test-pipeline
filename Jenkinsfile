@@ -1,9 +1,9 @@
-def pod_label = "nodejs-${UUID.randomUUID().toString()}"
+// def pod_label = "nodejs-${UUID.randomUUID().toString()}"
 
 pipeline {
   agent {
     kubernetes {
-      label pod_label
+      label 'jenkins'
       defaultContainer 'node'
       yaml """
 apiVersion: v1
